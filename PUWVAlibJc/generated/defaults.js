@@ -1,0 +1,1 @@
+const allDefaults=[{pager:null,type:"products",path:"shop/-defaults",filepath:"content/products/_defaults.json",filename:"_defaults.json",fields:{}}];export default allDefaults

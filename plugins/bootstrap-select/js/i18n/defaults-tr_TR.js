@@ -1,0 +1,6 @@
+/*!
+ * Bootstrap-select v1.14.0-beta3 (https://developer.snapappointments.com/bootstrap-select)
+ *
+ * Copyright 2012-2022 SnapAppointments, LLC
+ * Licensed under MIT (https://github.com/snapappointments/bootstrap-select/blob/master/LICENSE)
+ */(function(e,t){e===void 0&&window!==void 0&&(e=window),typeof define=="function"&&define.amd?define(["jquery"],function(e){return t(e)}):typeof module=="object"&&module.exports?module.exports=t(require("jquery")):t(e.jQuery)})(this,function(e){(function(e){e.fn.selectpicker.defaults={noneSelectedText:"Hiçbiri seçilmedi",noneResultsText:"Hiçbir sonuç bulunamadı {0}",countSelectedText:function(e){return e==1?"{0} öğe seçildi":"{0} öğe seçildi"},maxOptionsText:function(e,t){return[e==1?"Limit aşıldı (maksimum {n} sayıda öğe )":"Limit aşıldı (maksimum {n} sayıda öğe)",t==1?"Grup limiti aşıldı (maksimum {n} sayıda öğe)":"Grup limiti aşıldı (maksimum {n} sayıda öğe)"]},selectAllText:"Tümünü Seç",deselectAllText:"Tüm Seçimleri Kaldır",multipleSeparator:", "}})(e)})

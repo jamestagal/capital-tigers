@@ -1,0 +1,1 @@
+const allSchemas={products:{}};export default allSchemas
