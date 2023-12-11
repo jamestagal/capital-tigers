@@ -1,0 +1,12 @@
+{
+	"build": "public",
+	"routes": {
+		"pages": ":filename",
+		"products": "shop/:filename"
+	},
+	"entrypoint_js": ":fingerprint",
+	"baseurl": "/capital-tigers/",
+	"local": {
+		"port": 3000
+	}
+}

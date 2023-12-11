@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  color: #fff;
+  background: #ff7979;
+}
+.wrapper {
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+.wrapper .row {
+  display: flex;
+}
+.wrapper .row-1 {
+  justify-content: flex-start;
+}
+.wrapper .row-2 {
+  justify-content: flex-end;
+}
+.wrapper .row section {
+  background: #fff;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+.wrapper .row section::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #fff;
+  top: 28px;
+  z-index: 1;
+  transform: rotate(45deg);
+}
+.row-1 section::before {
+  right: -7px;
+}
+.row-2 section::before {
+  left: -7px;
+}
+.row section .icon,
+.center-line .scroll-icon {
+  position: absolute;
+  background: #1d1d1d;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffc300;
+  font-size: 17px;
+  box-shadow:
+    0 0 0 4px #fff,
+    inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+.center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+.row-1 section .icon {
+  top: 15px;
+  right: -60px;
+}
+.row-2 section .icon {
+  top: 15px;
+  left: -60px;
+}
+.row section .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.row section .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.row section .details .title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.row section p {
+  margin: 10px 0 17px 0;
+}
+.row section .bottom a {
+  text-decoration: none;
+  background: #ffc300;
+  color: #1d1d1d;
+  padding: 7px 15px;
+  border-radius: 5px;
+  /* font-size: 17px; */
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+.row section .bottom a:hover {
+  transform: scale(0.97);
+}
+@media (max-width: 790px) {
+  .wrapper .center-line {
+    left: 40px;
+  }
+  .wrapper .row {
+    margin: 30px 0 3px 60px;
+  }
+  .wrapper .row section {
+    width: 100%;
+  }
+  .row-1 section::before {
+    left: -7px;
+  }
+  .row-1 section .icon {
+    left: -60px;
+  }
+}
+@media (max-width: 440px) {
+  .wrapper .center-line,
+  .row section::before,
+  .row section .icon {
+    display: none;
+  }
+  .wrapper .row {
+    margin: 10px 0;
+  }
+}
+.match-scheduled {
+  flex: 0 1 12.4rem;
+  margin: 0.8rem 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.match-scheduled__timezone {
+  font-size: .8rem;
+  line-height: .8rem;
+  color: #595959;
+}
+.match-scheduled__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.match-scheduled__time {
+  font-size: 2.1rem;
+  line-height: 1.9rem;
+  color: #1a1a1a;
+  display: inline-flex;
+  font-weight: 500;
+  margin: 0;
+  padding: 0.4rem 0 0.1rem;
+  align-items: flex-start;
+}
+.match-scheduled__venue {
+  line-height: 1.14;
+  letter-spacing: -.03rem;
+  color: #1a1a1a;
+  display: inline-flex;
+  font-weight: bold;
+}
+.match-scheduled__state {
+  font-weight: 400;
+  color: #595959;
+  margin-left: 0.2rem;
+}
+.match-scheduled__time-ampm {
+  color: #595959;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 0.4rem;
+}
+.bottom {
+  margin: 10px 0 17px 0;
+}
+.btm-link {
+  margin: 10px 0 0 0;
+}
+
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-81 {
+      /* Centers button */
+      text-align: center;
+      /* 144px - 300px - leaving extra space for the navigation */
+      padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
+      /* 130px - 450px */
+      padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
+      position: relative;
+      z-index: 1;
+      /* Prevents white rectangle pseudos from overlapping the sections below */
+      overflow: hidden;
+    }
+  
+    /* #hero-81:before {
+      /* Left side of the triangle 
+      content: "";
+      width: 31.25rem;
+      /* make really long so it covers the whole screen all the way to desktop 
+      height: 250rem;
+      background: #fff;
+      opacity: 1;
+      transform: rotate(-67deg);
+      transform-origin: center;
+      position: absolute;
+      display: block;
+      bottom: -139.6875rem;
+      /* this makes the right edge sit at the 50% line at all times *
+      right: 50%;
+      z-index: 0;
+    }
+    #hero-81:after {
+      /* Right side of the triangle *
+      content: "";
+      width: 31.25rem;
+      height: 250rem;
+      background: #fff;
+      opacity: 1;
+      transform: rotate(67deg);
+      transform-origin: center;
+      position: absolute;
+      display: block;
+      bottom: -139.6875rem;
+      /* this makes the left edge sit at the 50% line at all times 
+      left: 50%;
+      z-index: 0;
+    } */
+    #hero-81 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+    #hero-81 .cs-background:before {
+      /* Overlay */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.7;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* prevents the cursor from interacting with it */
+      pointer-events: none;
+    }
+    #hero-81 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    #hero-81 .cs-container {
+      width: 100%;
+      max-width: 67.5rem;
+      margin: auto;
+      margin-top: -250px;
+    }
+    #hero-81 .cs-title {
+      /* 39px - 61px */
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-weight: 700;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 51.8125rem;
+      /* 16px - 24px */
+      margin: 0 auto clamp(1rem, 4vw, 1.5rem);
+      color: #fff;
+      position: relative;
+    }
+    #hero-81 .cs-title:after {
+      /* Divider Line */
+      content: "";
+      /* 60px - 100px */
+      width: clamp(3.75rem, 9.5vw, 6.25rem);
+      /* 4px - 8px */
+      height: clamp(0.25rem, 0.8vw, 0.5rem);
+      /* 16px - 24px */
+      margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
+      background: var(--primary);
+      opacity: 1;
+      position: relative;
+      display: block;
+    }
+    #hero-81 .cs-text {
+      /* 16px - 25px */
+      font-size: clamp(1rem, 1.95vw, 1.5625rem);
+      line-height: 1.5em;
+      text-align: center;
+      width: 100%;
+      /* 464px - 800px */
+      max-width: clamp(29rem, 60vw, 50rem);
+      margin: 0 auto;
+      /* 40px - 48px */
+      margin-bottom: clamp(2.5rem, 4vw, 3rem);
+      color: #fff;
+    }
+  }
+  /* Desktop - 1300px (To make image background parallax) 
+  @media only screen and (min-width: 81.25rem) {
+    #hero-81 {
+      background: url('media/images/hero/heroBanner01.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* makes the parallax effect 
+      background-attachment: fixed;
+    }
+    #hero-81 .cs-background img {
+      display: none;
+    }
+  }
+  */
