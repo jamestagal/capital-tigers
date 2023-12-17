@@ -1,5 +1,4 @@
 <script>
-  import { is_crossorigin } from "svelte/internal";
   export let cards;
 </script>
 
@@ -48,7 +47,7 @@
       </section>
     </div>
     {#each cards as card, i}
-      <div class="row row-{i%2==0 ? 1 : 2}">
+      <div class="row row-{i%2==0 ? 2 : 1}">
         <section>
           <i class="icon fas fa-star"></i>
           <div class="details">
@@ -71,8 +70,6 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
   * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
@@ -267,3 +264,4 @@
     margin: 10px 0 0 0;
 }
 </style>
+
