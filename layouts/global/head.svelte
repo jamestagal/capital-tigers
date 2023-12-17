@@ -69,7 +69,7 @@
     href="plugins/revolution/revolution/css/navigation.css"
   />
 
-  <script type="module" src={`/${env.entrypointJS}/core/main.js`}></script>
+  <script type="module" src={`${env.entrypointJS}/core/main.js`}></script>
 
   <!-- JavaScript  files ========================================= -->
   <!-- JavaScript  files ========================================= -->
@@ -162,5 +162,5 @@
   ></script>
   <script src="js/rev.slider.js" type="module"></script>
   <link rel="icon" type="image/svg+xml" href="/media/logo.svg" />
-  <link rel="stylesheet" href={`/${env.entrypointJS}/bundle.css`} />
+  <link rel="stylesheet" href={`${env.entrypointJS}/bundle.css`} />
 </head>

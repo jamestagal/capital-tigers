@@ -1,3 +1,7 @@
+<script>
+  export let user;
+</script>
+
 <!-- header -->
 <header class="site-header header-style-7 dark mo-left">
   <!-- top bar -->
@@ -26,6 +30,7 @@
         </div>
         <div class="dez-topbar-right">
           <ul class="social-line text-center pull-right">
+            <li><a href="." on:click|preventDefault={$user.login()}>Login</a></li>
             <li><a href="." class="fa fa-facebook"></a></li>
             <li><a href="." class="fa fa-twitter"></a></li>
             <li><a href="." class="fa fa-linkedin"></a></li>
