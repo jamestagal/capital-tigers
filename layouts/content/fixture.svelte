@@ -1,5 +1,11 @@
 <script>
   export let cards;
+
+ function formatDate(date){
+  const Date = new Date();
+  const Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  return `${Months[date.getMonth]}, ${Date[date.getDate()]}`;
+ }
 </script>
 
 <section class="section-full bg-gray-dark content-inner">
