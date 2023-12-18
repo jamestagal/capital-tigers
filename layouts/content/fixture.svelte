@@ -17,10 +17,17 @@
       <div class="row row-{i%2==0 ? 1 : 2}">
         <section>
           <i class="icon">{i}</i>
+          {#if i%2==0}
           <div class="details">
             <span class="title">{card.day}</span>{card.date}
             <span class="match-list__group-round">{card.title}</span>
           </div>
+          {:else}
+          <div class="details">
+            <span class="match-list__group-round">{card.title}</span>{card.date}
+            <span class="title">{card.day}</span>
+          </div>
+          {/if}
           <div class="bottom">
             <picture class="cs-icon">
               <img
