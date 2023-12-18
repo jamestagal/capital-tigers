@@ -1,39 +1,114 @@
 {
 	"cards": [
     {
+      "title": "Opening Round",
+      "day": "Saturday",
+      "date": "March 9",
+      "timeZone": "(GMT+11)",
+      "time": "4:20",
+      "am_pm": "PM",
+      "venue": "Heritage Bank Stadium,",
+      "state": "QLD",
+      "team1Logo": {
+        "url": "media/svg/GoldCoastSuns.svg",
+        "alt": "Gold Coast Suns logo"
+      },
+      "team2Logo": {
+        "url": "media/svg/Richmond.svg",
+        "alt": "Richmond Tigers logo"
+      },
+      "link": {
+        "title": "Read more",
+        "url": "https://www.richmondfc.com.au/matches/5897"
+      }
+    },
+    {
       "title": "Round 1",
-      "date": "Thursday - March 14",
-      "desc": "Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.",
-      "link": ".",
-      "attribution": "Someone famous"
+      "day": "Saturday",
+      "date": "March 9",
+      "timeZone": "(GMT+11)",
+      "time": "4:20",
+      "am_pm": "PM",
+      "venue": "Heritage Bank Stadium,",
+      "state": "QLD",
+      "team1Logo": {
+        "url": "media/svg/GoldCoastSuns.svg",
+        "alt": "Gold Coast Suns logo"
+      },
+      "team2Logo": {
+        "url": "media/svg/Richmond.svg",
+        "alt": "Richmond Tigers logo"
+      },
+      "link": {
+        "title": "Read more",
+        "url": "https://www.richmondfc.com.au/matches/5897"
+      }
     },
     {
       "title": "Round 2",
-      "date": "Thursday - March 14",
-      "desc": "Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.",
-      "link": ".",
-      "attribution": "Someone famous"
+      "day": "Saturday",
+      "date": "March 9",
+      "timeZone": "(GMT+11)",
+      "time": "4:20",
+      "am_pm": "PM",
+      "venue": "Heritage Bank Stadium,",
+      "state": "QLD",
+      "team1Logo": {
+        "url": "media/svg/GoldCoastSuns.svg",
+        "alt": "Gold Coast Suns logo"
+      },
+      "team2Logo": {
+        "url": "media/svg/Richmond.svg",
+        "alt": "Richmond Tigers logo"
+      },
+      "link": {
+        "title": "Read more",
+        "url": "https://www.richmondfc.com.au/matches/5897"
+      }
     },
     {
       "title": "Round 3",
-      "date": "Thursday - March 14",
-      "desc": "Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.",
-      "link": ".",
-      "attribution": "Someone famous"
+      "day": "Saturday",
+      "date": "March 9",
+      "timeZone": "(GMT+11)",
+      "time": "4:20",
+      "am_pm": "PM",
+      "venue": "Heritage Bank Stadium,",
+      "state": "QLD",
+      "team1Logo": {
+        "url": "media/svg/GoldCoastSuns.svg",
+        "alt": "Gold Coast Suns logo"
+      },
+      "team2Logo": {
+        "url": "media/svg/Richmond.svg",
+        "alt": "Richmond Tigers logo"
+      },
+      "link": {
+        "title": "Read more",
+        "url": "https://www.richmondfc.com.au/matches/5897"
+      }
     },
     {
       "title": "Round 4",
-      "date": "Thursday - March 14",
-      "desc": "Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.",
-      "link": ".",
-      "attribution": "Someone famous"
-    },
-    {
-      "title": "Round 5",
-      "date": "Thursday - March 14",
-      "desc": "Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.",
-      "link": ".",
-      "attribution": "Someone famous"
+      "day": "Saturday",
+      "date": "March 9",
+      "timeZone": "(GMT+11)",
+      "time": "4:20",
+      "am_pm": "PM",
+      "venue": "Heritage Bank Stadium,",
+      "state": "QLD",
+      "team1Logo": {
+        "url": "media/svg/GoldCoastSuns.svg",
+        "alt": "Gold Coast Suns logo"
+      },
+      "team2Logo": {
+        "url": "media/svg/Richmond.svg",
+        "alt": "Richmond Tigers logo"
+      },
+      "link": {
+        "title": "Read more",
+        "url": "https://www.richmondfc.com.au/matches/5897"
+      }
     }
   ]
 }

@@ -7,59 +7,43 @@
     <div class="center-line">
       <a href="." class="scroll-icon"><i class="fas fa-caret-up"></i></a>
     </div>
-    <div class="row row-1">
-      <section>
-        <i class="icon fas fa-home"></i>
-        <div class="details">
-          <span class="title">Saturday - March 9</span>
-          <span>Opening Round</span>
-        </div>
-        <div class="bottom">
-          <picture class="cs-icon">
-            <img
-              loading="lazy"
-              decoding="async"
-              src="media/images/icons/rich.png"
-              alt="test icon"
-              width="72"
-              height="72"
-              aria-hidden="true"
-            />
-          </picture>
-          <div class="match-scheduled"> <span class="match-scheduled__timezone"> <span class="match-scheduled__timezone--zone">(GMT+11)</span> </span> <time class="match-scheduled__time js-datetime" data-date="1709961600000"> 4:20<span class="match-scheduled__time-ampm">PM</span> </time> <div class="match-scheduled__location"> <span class="match-scheduled__venue" >Heritage Bank Stadium, </span> <span class="match-scheduled__state"> QLD</span>  </div> </div>
-          <picture class="cs-icon">
-            <img
-              loading="lazy"
-              decoding="async"
-              src="media/images/icons/rich.png"
-              alt="test icon"
-              width="72"
-              height="72"
-              aria-hidden="true"
-            />
-          </picture>
-        </div>
-        <div class="bottom btm-link">
-          <a href="https://www.richmondfc.com.au/matches/5897" target="_blank"
-            >Read more</a
-          >
-        </div>
-      </section>
-    </div>
     {#each cards as card, i}
-      <div class="row row-{i%2==0 ? 2 : 1}">
+      <div class="row row-{i%2==0 ? 1 : 2}">
         <section>
-          <i class="icon fas fa-star"></i>
+          <i class="icon fas fa-home"></i>
           <div class="details">
-            <span class="title">{card.title}</span>
-            <span>{card.date}</span>
+            <span class="title">{card.day}</span>{card.date}
+            <span class="match-list__group-round">{card.title}</span>
           </div>
-          <p>
-            {card.desc}
-          </p>
           <div class="bottom">
-            <a href="{card.link}">Read more</a>
-            <i>- {card.attribution}</i>
+            <picture class="cs-icon">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="{card.team1Logo.url}"
+                alt="{card.team1Logo.alt}"
+                width="115"
+                height="115"
+                aria-hidden="true"
+              />
+            </picture>
+            <div class="match-scheduled"> <span class="match-scheduled__timezone"> <span class="match-scheduled__timezone--zone">{card.timeZone}</span> </span> <time class="match-scheduled__time js-datetime" data-date="1709961600000"> {card.time}<span class="match-scheduled__time-ampm">{card.am_pm}</span> </time> <div class="match-scheduled__location"> <span class="match-scheduled__venue" >{card.venue} </span> <span class="match-scheduled__state"> {card.state}</span>  </div> </div>
+            <picture class="cs-icon">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="{card.team2Logo.url}"
+                alt="{card.team2Logo.alt}"
+                width="115"
+                height="115"
+                aria-hidden="true"
+              />
+            </picture>
+          </div>
+          <div class="bottom btm-link">
+            <a href="{card.link.url}" target="_blank"
+              >{card.link.title}</a
+            >
           </div>
         </section>
       </div>
@@ -256,6 +240,21 @@
     font-weight: 300;
     text-transform: uppercase;
     margin-left: 0.4rem;
+}
+.match-list__group-round {
+    height: 1.6rem;
+    border-radius: 1.2rem;
+    border: 1px solid rgba(26,26,26,.1);
+    background-color: #f8f8f8;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+    padding: 0 1.2rem;
+    text-transform: uppercase;
+}
+.match-list__group-date--day {
+    font-weight: 700;
 }
 .bottom {
     margin: 10px 0 17px 0;
