@@ -1,0 +1,1 @@
+export let env={local:!1,baseurl:"/capital-tigers/",entrypointHTML:"global/html.svelte",entrypointJS:"JxCpFoamun",cms:{repo:"",redirectUrl:"",appId:"",branch:""}}
