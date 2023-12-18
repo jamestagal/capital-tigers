@@ -68,6 +68,9 @@
     color: #fff;
     background: #ff7979;
   }
+  i {
+    font-style: normal;
+}
   .wrapper {
     max-width: 1080px;
     margin: 50px auto;
