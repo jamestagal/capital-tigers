@@ -97,7 +97,7 @@
               <a href=".">Home<i class="fa fa-chevron-down"></i></a>
               <ul class="sub-menu">
                 <li><a href="about">About</a></li>
-                <li><a href="fixture">2024 Fixture</a></li>
+                <li><a href="fixture/2024">2024 Fixture</a></li>
                 <li><a href="shop">Shop</a></li>
                 <li><a href="index-4.html">Home 4</a></li>
               </ul>
