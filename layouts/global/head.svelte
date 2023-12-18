@@ -48,6 +48,9 @@
   <link rel="stylesheet" type="text/css" href="css/plugins.css" />
   <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   <link rel="stylesheet" type="text/css" href="css/hover.css" />
+  <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/font-awesome.all.css" />
+  <link rel="stylesheet" type="text/css" href="plugins/fontawesome/css/font-awesome.all.min.css" />
   <link
     rel="stylesheet"
     type="text/css"
@@ -56,6 +59,12 @@
   />
   <link rel="stylesheet" type="text/css" href="css/templete.min.css" />
 
+    <!-- font-awesome Css -->
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="plugins/revolution/revolution/css/settings.css"
+  />
   <!-- Revolution Slider Css -->
   <link
     rel="stylesheet"
