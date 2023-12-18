@@ -16,7 +16,7 @@
     {#each cards as card, i}
       <div class="row row-{i%2==0 ? 1 : 2}">
         <section>
-          <i class="icon fas fa-home"></i>
+          <i class="icon">{i}</i>
           <div class="details">
             <span class="title">{card.day}</span>{card.date}
             <span class="match-list__group-round">{card.title}</span>
